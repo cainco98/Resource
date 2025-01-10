@@ -1,0 +1,764 @@
+<p>{companyInformation.companyName}: ${transaction@title} #${transaction.tranId}</p>
+<!--?xml version="1.0" ?--><center>&lt;#if transaction.item?has_content&gt;&lt;#assign totalquantity = 0&gt;&lt;#list transaction.item as item&gt;&lt;#if item.noprint == "F"&gt;&lt;#assign totalquantity = totalquantity + item.quantity&gt;&lt;/#if&gt;&lt;/#list&gt;&lt;/#if&gt;
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center" height="15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td colspan="4" height="15">&nbsp;</td>
+</tr>
+<tr>
+<td width="15">&nbsp;</td>
+<td align="left" valign="middle" width="295"><a href="http://5906918.shop.netsuite.com/core/media/media.nl?id=2528&amp;c=5906918&amp;h=WNuxEl_BnR03xvaY-beomMmWLlz_J2Ku7eIYG5Zclgm1afxg"><img style="margin: 7px; float: left; width: 192px !important; height: 45px;" src="${companyInformation.logoUrl}" alt="" width="192px" height="45px" /></a></td>
+<td align="right" valign="middle" width="295"><a id="headerPhone" class="phone-number" style="font-family: Arial, sans-serif; font-size: 18px; font-weight: 600; white-space: nowrap;" href="tel:1-877-696-2822"><strong>1-877-My-NAVAC</strong></a></td>
+<td width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="company_style_border" style="border-bottom: 3px solid black;" colspan="4" height="15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center">
+<table class="table600Min" style="min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td align="center">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="vrtclAlgn2" style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+<tr>
+<td class="titleTD" style="color: #333333; font-family: Arial, sans-serif; font-size: 36px; font-weight: 400; margin: 0; padding: 0;" colspan="3" align="center" height="25">Thank you for your order!</td>
+</tr>
+<tr>
+<td class="vrtclAlgn2" style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz" width="15">&nbsp;</td>
+<!--TEXT SECTION-->
+<td class="RegularTextTD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: left; line-height: 25px;">Hello <span style="text-transform: capitalize;">${transaction.entity}<br /> <br /> Your order has been received and is now being processed, please open the attached file to view your Sales Order<br /> <br /> Sell NAVAC tools with our Full Throttle Sweepstakes now before it's too late! Ending in March 2025, it provides a great opportunity for your customers to win a Harley Davidson Nightster S. Every dollar they spend on NAVAC tools earns them one entry. <a href="https://raffle.navacglobal.com">Learn More Here</a>. Access flyers and other promotional assets  <a href="https://my.navacglobal.com/fullthrottleassets">Here</a>.<br /> <br /> <strong>Order #:</strong> ${transaction.tranid}<br /> <strong>Purchase Order #:</strong> ${transaction.otherrefnum}<br /> <strong>Order date:</strong> ${transaction.trandate}</span></td>
+<td class="wz" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="vrtclAlgn" style="font-size: 0; line-height: 0;" colspan="3" height="15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--END OF THE MODULE--><!--2 COLUMNS == INVOICE CREDENTIALS MODULE == 2 (20 x 20) ICONS ==-->
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center">
+<table class="table600Min" style="min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0" align="left" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<th class="stack" style="border-bottom: 1px solid #DDE5F1; border-top: 1px solid #DDE5F1; margin: 0; padding: 0; vertical-align: top;" width="300">
+<table class="table6003" style="border-bottom-color: #DDE5F1;" border="0" width="300" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz" width="15">&nbsp;</td>
+<td align="center" valign="top">
+<table class="tableTxt" border="0" width="270" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td class="header2TD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; text-align: left; line-height: 19px; font-weight: bold;" align="left" valign="top" width="211">Billing Information:</td>
+</tr>
+<tr>
+<td class="RegularText4TD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: left; line-height: 25px; text-transform: capitalize;" align="left" valign="top" width="179">${transaction.billaddress}</td>
+</tr>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="wz" width="15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack" style="border-bottom: 1px solid #DDE5F1; border-left: 1px solid #DDE5F1; border-top: 1px solid #DDE5F1; margin: 0; padding: 0; vertical-align: top;" valign="top" width="299">
+<table class="table600" border="0" width="299" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz" width="15">&nbsp;</td>
+<td align="center" valign="top">
+<table class="tableTxt" border="0" width="270" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td class="header2TD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; text-align: left; line-height: 19px; font-weight: bold;" align="left" valign="top" width="211">Payment Terms</td>
+</tr>
+<tr>
+<td class="RegularText4TD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: left; line-height: 25px;" align="left" valign="top" width="179">${transaction.terms}</td>
+</tr>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="wz" width="15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center">
+<table class="table600Min" style="min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0" align="left" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<table border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<th class="stack" style="margin: 0; padding: 0; vertical-align: top;" width="300">
+<table class="table6003" style="border-bottom-color: #DDE5F1;" border="0" width="300" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz" width="15">&nbsp;</td>
+<td align="center" valign="top">
+<table class="tableTxt" border="0" width="270" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td class="header2TD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; text-align: left; line-height: 19px; font-weight: bold;" align="left" valign="top" width="211">Shipping Information</td>
+</tr>
+<tr>
+<td class="RegularText4TD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: left; line-height: 25px; text-transform: capitalize;" align="left" valign="top" width="179">${transaction.shipaddress}</td>
+</tr>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="wz" width="15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack" style="border-left: 1px solid #DDE5F1; margin: 0; padding: 0; vertical-align: top;" valign="top" width="299">
+<table class="table600" border="0" width="299" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz" width="15">&nbsp;</td>
+<td align="center" valign="top">
+<table class="tableTxt" border="0" width="270" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td class="header2TD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; text-align: left; line-height: 19px; font-weight: bold;" align="left" valign="top" width="211">Shipping Method</td>
+</tr>
+<tr>
+<td class="RegularText4TD" style="color: #333333; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: left; line-height: 25px;" align="left" valign="top" width="179">${transaction.shipmethod}</td>
+</tr>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="wz" width="15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--END OF THE MODULE--><!--== ITEM DETAIL HEADER MODULE == MAIN INVOICE CAPTIONS == DESCRIPTION == QUANTITY == PRICE == TEXT ==-->
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center">
+<table class="table600Min" style="min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0" align="left" bgcolor="#999999">
+<tbody>
+<tr>
+<td align="left">
+<table style="border-bottom: 1px solid #DDE5F1;" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<th class="stack2" style="margin: 0; padding: 0; vertical-align: top;" width="300">
+<table class="table60032" style="border-bottom-color: #DDE5F1;" border="0" width="300" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- DESCRIPTION TEXT -->
+<td class="header5TD" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 15px; text-align: left; line-height: 25px; font-weight: bold;">Description</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-left: 1px solid #DDE5F1; margin: 0; padding: 0; vertical-align: top;" width="74">
+<table class="table60033" style="border-bottom-color: #DDE5F1;" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- PRICE TEXT -->
+<td class="header5TD" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 15px; text-align: center; line-height: 25px; font-weight: bold;">Price</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-left: 1px solid #DDE5F1; margin: 0; padding: 0; vertical-align: top;" width="74">
+<table class="table60033" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- QUANTITY TEXT -->
+<td class="header5TD" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 15px; text-align: center; line-height: 25px; font-weight: bold;">Quantity</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-left: 1px solid #DDE5F1; margin: 0; padding: 0; vertical-align: top;" width="74">
+<table class="table60033" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- TOTAL TEXT -->
+<td class="header5TD" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 15px; text-align: center; line-height: 25px; font-weight: bold;">Total</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--END OF THE MODULE--><!-- LINE ITEM DETAIL == NAME, PRICE, QUANTITY, TOTAL -->
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center">
+<table class="table600Min" style="min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0" align="left" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td align="left"><!-- HERE? -->
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<th class="stack2" style="border-bottom: 1px solid #DDE5F1; margin: 0; padding: 0;" width="300">
+<table class="table60032" border="0" width="300" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- DESCRIPTION -->
+<td class="header2TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; text-align: left; line-height: 19px; font-weight: 400;">${item.item}<br /> ${item.description}<br /> ${item.options}</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-bottom: 1px solid #DDE5F1; border-left: 1px solid #DDE5F1; margin: 0; padding: 0;" width="74">
+<table class="table60033" style="border-bottom-color: #DDE5F1;" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- PRICE -->
+<td class="RegularText5TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: right; line-height: 25px;" align="right">${item.rate}</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-bottom: 1px solid #DDE5F1; border-left: 1px solid #DDE5F1; margin: 0; padding: 0;" width="74">
+<table class="table60033" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- QUANTITY -->
+<td class="RegularText5TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: center; line-height: 25px;">${item.quantity}</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-bottom: 1px solid #DDE5F1; border-left: 1px solid #DDE5F1; margin: 0; padding: 0;" width="74">
+<table class="table60033" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- TOTAL -->
+<td class="RegularText5TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: right; line-height: 25px;" align="right">${item.amount}</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center">
+<table class="table600Min" style="min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0" align="left" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td align="left"><!-- HERE? -->
+<table border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<th class="stack2" style="border-bottom: 1px solid #DDE5F1; margin: 0; padding: 0;" width="300">
+<table class="table60032" border="0" width="300" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- DESCRIPTION -->
+<td class="header2TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; text-align: left; line-height: 19px; font-weight: 400;">&nbsp;</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-bottom: 1px solid #DDE5F1; border-left: 1px solid #DDE5F1; margin: 0; padding: 0;" width="74">
+<table class="table60033" style="border-bottom-color: #DDE5F1;" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- PRICE -->
+<td class="RegularText5TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: right; line-height: 25px;" align="right">&nbsp;</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-bottom: 1px solid #DDE5F1; border-left: 1px solid #DDE5F1; margin: 0; padding: 0;" width="74">
+<table class="table60033" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- QUANTITY -->
+<td class="RegularText5TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: center; line-height: 25px;">${totalquantity}</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th class="stack3" style="border-bottom: 1px solid #DDE5F1; border-left: 1px solid #DDE5F1; margin: 0; padding: 0;" width="74">
+<table class="table60033" border="0" width="74" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz2" width="15">&nbsp;</td>
+<!-- TOTAL -->
+<td class="RegularText5TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: right; line-height: 25px;" align="right">${transaction.total}
+
+
+</td>
+<td class="wz2" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--END OF THE MODULE--><!-- 3 COLUMNS MODULE == FINAL INVOICE CALCULATIONS (SUBTOTAL, VAT, TOTAL) + SIGNATURE == -->
+<!-- PICTURE WITH HYPERLINK -->
+<tr>
+    <td align="center">
+        <a href="https://raffle.navacglobal.com">
+            <img src="https://raw.githubusercontent.com/cainco98/Resource/refs/heads/main/SO%20GRAPHIC.jpg" alt="" style="margin: 1px; width: 600px; height: auto;" />
+        </a>
+    </td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>
+<table style="table-layout: fixed; margin: 0 auto;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td align="center">
+<table class="table600Min" style="table-layout: fixed; margin: 0 auto; min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center" bgcolor="#D4D4D4">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px;" align="center">
+<table class="table600Min" style="min-width: 598px;" border="0" width="600" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td class="table600st" style="min-width: 598px; border-top: 1px solid #DDE5F1;">
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0" align="left" bgcolor="#FFFFFF">
+<tbody>
+<tr>
+<td>
+<table class="table600" border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="25">&nbsp;</td>
+</tr>
+<tr>
+<td class="wz" width="15">&nbsp;</td>
+<!--REGULAR TEXT SECTION-->
+<td class="RegularText5TD" style="color: #555555; font-family: Arial, sans-serif; font-size: 14px; font-weight: 400; text-align: center; line-height: 25px;">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+ 
+  
+  
+  
+<tr>
+<td style="text-align: left;"><strong><span style="color: #d35400;"><span style="font-size: 14px;"><span style="font-family: NotoSans,sans-serif;">NAVAC Inc</span></span></span></strong><br /> <span style="font-size: 12px;"><span style="font-family: NotoSans,sans-serif;">1099 Wall St W.Suite179<br /> Lyndhurst NJ 07071<br /> Tel:877-696-2822 <br /> Fax:877-696-2822 <br /> Email:order@navacglobal.com <br /> www.navacglobal.com</span></span></td>
+</tr>
+<tr>
+<td height="15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="wz" width="15">&nbsp;</td>
+</tr>
+<tr>
+<td class="va2" style="font-size: 0; line-height: 0;" colspan="3" height="30">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
